@@ -11,7 +11,9 @@ class TopMenu extends Component {
     return (
       <Section wrapperClass="top-menu-wrapper" sectionClass="top-menu">
         <Menu menuClass="top-menu-block top-menu-block-left">
-          {this.props.links.map((link, i) => (<MenuLink key={i} text={link.text} link={link.to} liClass="top-menu-item" classOnActive="menu-link-active"/>))}
+          {this.props.links.map((link, i) => (
+            <MenuLink key={i} text={link.text} link={link.to} liClass="top-menu-item" classOnActive="menu-link-active"/>
+          ))}
         </Menu>
 
         <Menu menuClass="top-menu-block top-menu-block-right" borders={true}>

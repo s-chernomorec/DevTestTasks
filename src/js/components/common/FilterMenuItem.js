@@ -7,9 +7,7 @@ const FilterMenuItem = props => {
     props.changeActiveCategory(props.category);
   }
 
-  const activeClass = props.isActive
-    ? 'menu-link-active'
-    : '';
+  const activeClass = props.isActive ? 'menu-link-active' : '';
 
   return (
     <li className="menu-item filter-menu-item">

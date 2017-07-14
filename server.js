@@ -18,7 +18,6 @@ app.use(express.static(publicPath));
 
 app.get('*', (req, res) => {
   res.render('index');
-  // res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
 app.listen(process.env.PORT, () => {

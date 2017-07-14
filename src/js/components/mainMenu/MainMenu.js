@@ -14,7 +14,9 @@ const MainMenu = ({links}) => {
         <NavLink to='/'><img src="img/logo.jpg"/></NavLink>
       </div>
       <Menu menuClass="main-menu">
-        {links.map((link, i) => (<MenuLink key={i} text={link.text} link={link.to} liClass="main-menu-item main-menu-top-item" classOnActive="menu-link-active"/>))}
+        {links.map((link, i) => (
+          <MenuLink key={i} text={link.text} link={link.to} liClass="main-menu-item main-menu-top-item" classOnActive="menu-link-active"/>
+        ))}
       </Menu>
       <ShoppingBlock itemsInBag={2}/>
     </Section>

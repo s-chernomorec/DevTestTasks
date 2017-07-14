@@ -36,7 +36,7 @@ Product.propTypes = {
     name: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
     oldPrice: PropTypes.string,
-    isNew: PropTypes.bool
+    isNew: PropTypes.bool.isRequired
   }).isRequired
 };
 

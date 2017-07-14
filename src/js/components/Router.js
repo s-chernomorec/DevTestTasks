@@ -7,38 +7,18 @@ import PAGE_PLACEHOLDER from './pages/PAGE_PLACEHOLDER';
 import CatalogPage from './pages/CatalogPage';
 
 const topLinks = [
-  {
-    to: '/delivery',
-    text: 'delivery'
-  }, {
-    to: '/faq',
-    text: 'faq'
-  }, {
-    to: '/help',
-    text: 'help'
-  }
+  { to: '/delivery', text: 'delivery' },
+  { to: '/faq', text: 'faq'},
+  { to: '/help', text: 'help'}
 ];
 
 const mainLinks = [
-  {
-    to: '/',
-    text: 'home'
-  }, {
-    to: '/catalog',
-    text: 'catalog'
-  }, {
-    to: '/news',
-    text: 'news'
-  }, {
-    to: '/sale',
-    text: 'sale'
-  }, {
-    to: '/about',
-    text: 'about'
-  }, {
-    to: '/contact',
-    text: 'contact'
-  }
+  { to: '/', text: 'home' },
+  { to: '/catalog', text: 'catalog' },
+  { to: '/news', text: 'news' },
+  { to: '/sale', text: 'sale' },
+  { to: '/about', text: 'about' },
+  { to: '/contact', text: 'contact' }
 ];
 
 const Router = _props => {

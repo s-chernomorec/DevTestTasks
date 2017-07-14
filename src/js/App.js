@@ -15,18 +15,18 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/data.json').then(response => response.json()).then(data => {
+    fetch('/data.json')
+    .then(response => response.json())
+    .then(data => {
       this.setState({catalog: data.catalog});
     }).catch(e => console.log(e));
   }
 
   render() {
-
     let props = h.assign(this.state);
 
     return (<Router {...props}/>);
   }
 }
 
-render(
-  <App/>, document.getElementById('app'));
+render(<App/>, document.getElementById('app'));

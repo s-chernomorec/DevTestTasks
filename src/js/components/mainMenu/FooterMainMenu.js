@@ -17,7 +17,9 @@ const FooterMainMenu = ({links}) => {
         marginRight: 0
       }}>
 
-        {links.map((link, i) => (<MenuLink key={i} text={link.text} link={link.to} liClass="main-menu-item main-menu-footer-item" classOnActive="menu-link-active"/>))}
+        {links.map((link, i) => (
+          <MenuLink key={i} text={link.text} link={link.to} liClass="main-menu-item main-menu-footer-item" classOnActive="menu-link-active"/>
+        ))}
       </Menu>
       <CopyrightBlock/>
     </Section>
