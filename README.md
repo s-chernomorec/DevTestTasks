@@ -1,10 +1,17 @@
-Eleken Test Tasks
+Test Project for Eleken
 ===
 
-This repository contains different test tasks that we use in our hiring process for developers at [Eleken](http://eleken.co)
+## Link
+ - [Open App](https://eleken-task.herokuapp.com) - Link to app.
 
-Front-end tasks:
-- [Store Home Page](Front-end/StoreHomePage/StoreHomePage.md) - Home page for hypothetical clothes web store.
+## What Works:
+ * Routing
+ * Filter catalog by category
 
-React Native tasks:
-- [Search Images](ReactNative/SearchImages/SearchImages.md) - Simple app to search for images with specified keywords and display them in a listview.
+## Frameworks / Tools
+
+ * [React](https://facebook.github.io/react/)
+ * [React Router](https://github.com/ReactTraining/react-router)
+ * [Babel](https://babeljs.io/)
+ * [Webpack](https://webpack.js.org/)
+ * [Sass](http://sass-lang.com/)

@@ -1,0 +1,68 @@
+{
+   "catalog":[
+      {
+         "id":1,
+         "name":"Printed Swimsuit",
+         "category":"shorts",
+         "oldPrice":null,
+         "price":"$23",
+         "img":"img/products/1.png"
+      },
+      {
+         "id":2,
+         "name":"Jogging bermuda shorts",
+         "category":"shorts",
+         "oldPrice":"$36",
+         "price":"$12",
+         "img":"img/products/2.png"
+      },
+      {
+         "id":3,
+         "name":"Basic beach flip flops",
+         "category":"accessories",
+         "oldPrice":null,
+         "price":"$9",
+         "img":"img/products/3.png"
+      },
+      {
+         "id":4,
+         "name":"Black Sunglasses",
+         "category":"accessories",
+         "oldPrice":null,
+         "price":"$29",
+         "img":"img/products/4.png"
+      },
+      {
+         "id":5,
+         "name":"Long sleeved twill shirt",
+         "category":"jackets",
+         "oldPrice":null,
+         "price":"$20",
+         "img":"img/products/5.png"
+      },
+      {
+         "id":6,
+         "name":"Basic Swimsuit",
+         "category":"shorts",
+         "oldPrice":null,
+         "price":"$36",
+         "img":"img/products/6.png"
+      },
+      {
+         "id":7,
+         "name":"Bleached Shorts",
+         "category":"shorts",
+         "oldPrice":null,
+         "price":"$12",
+         "img":"img/products/7.png"
+      },
+      {
+         "id":8,
+         "name":"T-shirt with lower panel",
+         "category":"t-shirts",
+         "oldPrice":"$32",
+         "price":"$12",
+         "img":"img/products/8.png"
+      }
+   ]
+}

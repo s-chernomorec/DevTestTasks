@@ -1,0 +1,25 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: $text-gray-color;
+
+  &:hover { color: $text-red-color; }
+
+  &:active { color: $text-black-color; }
+}
+
+html, body, .wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
