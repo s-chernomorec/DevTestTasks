@@ -6,6 +6,7 @@ Test Project for Eleken
 
 ## What Works:
  * Routing
+ * Data fetching from JSON file
  * Filter catalog by category
 
 ## Frameworks / Tools
