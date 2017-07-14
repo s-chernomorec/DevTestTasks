@@ -2,7 +2,7 @@ Test Project for Eleken
 ===
 
 ## Link
- - [Open App](https://eleken-task.herokuapp.com) - Link to app.
+ - [Open App](https://eleken-task.herokuapp.com/catalog) - Link to catalog page.
 
 ## What Works:
  * Routing
