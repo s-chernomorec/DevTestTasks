@@ -2609,6 +2609,7 @@ html, body, .wrapper {
     .products-list .product-wrapper:nth-child(4n + 1) {
       width: 277px; }
     .products-list .product-wrapper .product {
+      position: relative;
       width: 100%;
       text-align: center; }
       .products-list .product-wrapper .product > img {
@@ -2629,6 +2630,20 @@ html, body, .wrapper {
         .products-list .product-wrapper .product .product-description .product-price-new {
           color: #fc411d;
           margin-left: 6px; }
+      .products-list .product-wrapper .product .product-new-label {
+        position: absolute;
+        width: 48px;
+        height: 25px;
+        top: 25px;
+        left: 26px;
+        border-radius: 13px;
+        background-color: #1274d3; }
+        .products-list .product-wrapper .product .product-new-label span {
+          font: 11px "Lato Regular", serif;
+          text-transform: uppercase;
+          letter-spacing: 0;
+          line-height: 25px;
+          color: #fff; }
 
 .subscribe-wrapper {
   height: 287px; }

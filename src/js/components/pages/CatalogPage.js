@@ -31,7 +31,10 @@ class CatalogPage extends Component {
       <Section sectionClass="catalog-page">
         <PageHeader header="Catalog"/>
         <Menu menuClass="filter-menu">
-          <FilterMenuItem changeActiveCategory={category => this.changeActiveCategory(category)} category={'all'} isActive={this.state.activeCategory === 'all'}/> {this.props.categories.map((item, i) => (<FilterMenuItem key={i} isActive={this.state.activeCategory === item} changeActiveCategory={category => this.changeActiveCategory(category)} category={item}/>))}
+          <FilterMenuItem changeActiveCategory={category => this.changeActiveCategory(category)} category={'all'} isActive={this.state.activeCategory === 'all'}/>
+          {this.props.categories.map((item, i) => (
+            <FilterMenuItem key={i} isActive={this.state.activeCategory === item} changeActiveCategory={category => this.changeActiveCategory(category)} category={item}/>
+          ))}
         </Menu>
         <div className="products-list">
           {filteredCatalog.map(product => (<Product key={product.id} product={product}/>))}
@@ -55,7 +58,8 @@ CatalogPage.propTypes = {
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
-    oldPrice: PropTypes.string
+    oldPrice: PropTypes.string,
+    isNew: PropTypes.bool
   })).isRequired,
   categories: PropTypes.arrayOf(PropTypes.string)
 };

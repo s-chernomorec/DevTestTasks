@@ -267,6 +267,7 @@
     &:nth-child(4n + 1) { width: 262px + $global-padding / 2; }
 
     .product {
+      position: relative;
       width: 100%;
       text-align: center;
 
@@ -297,6 +298,24 @@
         .product-price-new {
           color: $text-red-color;
           margin-left: 6px;
+        }
+      }
+
+      .product-new-label {
+        position: absolute;
+        width: 48px;
+        height: 25px;
+        top: 25px;
+        left: 26px;
+        border-radius: 13px;
+        background-color: $text-blue-color;
+
+        span {
+          font: $catalog-item-new-font;
+          text-transform: uppercase;
+          letter-spacing: 0;
+          line-height: 25px;
+          color: #fff;
         }
       }
     }

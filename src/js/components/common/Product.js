@@ -9,14 +9,20 @@ const Product = props => {
         <img src={props.product.img}/>
         <div className="product-description">
           <div className="product-name">{props.product.name}</div>
-          {props.product.oldPrice
+          {
+            props.product.oldPrice
             ? <div className="product-price">
                 <span className="product-price-old">{props.product.oldPrice}</span>
                 <span className="product-price-new">{props.product.price}</span>
               </div>
             : <div className="product-price">{props.product.price}</div>
-}
+          }
         </div>
+        {
+          <div className="product-new-label" style={{display: props.product.isNew !== true ? 'none' : 'block'}}>
+            <span>New</span>
+          </div>
+        }
       </div>
     </div>
   );
@@ -29,7 +35,8 @@ Product.propTypes = {
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
-    oldPrice: PropTypes.string
+    oldPrice: PropTypes.string,
+    isNew: PropTypes.bool
   }).isRequired
 };
 

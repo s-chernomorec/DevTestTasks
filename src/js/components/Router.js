@@ -48,7 +48,6 @@ const Router = _props => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" render={(routeProps) => (RenderPage(PAGE_PLACEHOLDER, props, routeProps))}/>
         <Route path="/catalog" render={() => (RenderPage(CatalogPage, props))}/>
         {topLinks.map((link, i) => (<Route path={link.to} render={(routeProps) => (RenderPage(PAGE_PLACEHOLDER, props, routeProps))} key={i}/>))}
         {mainLinks.map((link, i) => (<Route path={link.to} render={(routeProps) => (RenderPage(PAGE_PLACEHOLDER, props, routeProps))} exact={link.to === '/' ? true : false} key={i}/>))}
@@ -56,21 +55,5 @@ const Router = _props => {
     </BrowserRouter>
   );
 };
-
-// const Router = props => {
-//   return (
-//     <BrowserRouter>
-//       <Switch>
-//         <Route exact path="/" render={() => (RenderPage(HomePage, props))}/>
-//         <Route path="/catalog" render={() => (RenderPage(CatalogPage, props))}/>
-//         <Route path="/news" render={() => (RenderPage(NewsPage, props))}/>
-//         <Route path="/sale" render={() => (RenderPage(SalePage, props))}/>
-//         <Route path="/about" render={() => (RenderPage(AboutPage, props))}/>
-//         <Route path="/contact" render={() => (RenderPage(ContactPage, props))}/>
-//         <Route component={NoMatch}/>
-//       </Switch>
-//     </BrowserRouter>
-//   );
-// };
 
 export default Router;
